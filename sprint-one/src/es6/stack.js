@@ -9,7 +9,7 @@ class Stack {
   push(value) {
     this.storage[this.lastIndex] = value;
     this.lastIndex++;
-  };
+  }
 
   pop() {
     if (this.lastIndex > 0) {
@@ -18,10 +18,9 @@ class Stack {
       this.lastIndex--;
       return result;
     }
-  };
+  }
 
   size() {
     return this.lastIndex;
-  };
-
+  }
 }
